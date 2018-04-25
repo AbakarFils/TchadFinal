@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - tchad@localhost" uuid="929675b0-3003-41e8-9882-24a682fdda5f">
+    <database-info product="MySQL" version="5.5.5-10.1.9-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="tchad"/>
+    <table name="actualite" schema="" catalog="tchad" type="TABLE">
+      <column name="id_actualite" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="photo_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="etat" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_actualite"/>
+    </table>
+    <table name="admin" schema="" catalog="tchad" type="TABLE">
+      <column name="idAdmin" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idAdmin"/>
+    </table>
+    <table name="appartenir" schema="" catalog="tchad" type="TABLE">
+      <column name="idAp" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="idF" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="idP" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idAp"/>
+    </table>
+    <table name="citoyen" schema="" catalog="tchad" type="TABLE">
+      <column name="numIdentite" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nom" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="prenom" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="id_profession" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="nationalite" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_naissance" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="lieu_naissance" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pere" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mere" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="domicile" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="num_pers_contact" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mail" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="id_phone" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="genre" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="numIdentite"/>
+      <index name="id_profession" unique="false" columns="id_profession"/>
+    </table>
+    <table name="concerner" schema="" catalog="tchad" type="TABLE">
+      <column name="idC" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="idR" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="idP" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idC"/>
+      <index name="idR" unique="false" columns="idR"/>
+    </table>
+    <table name="formalite" schema="" catalog="tchad" type="TABLE">
+      <column name="idF" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="libF" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idF"/>
+      <exported-key name="renouvellement_ibfk_2" table="renouvellement" schema="" catalog="tchad" columns="idF"/>
+    </table>
+    <table name="image" schema="" catalog="tchad" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="realisation_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="id_realisation" unique="false" columns="realisation_id"/>
+    </table>
+    <table name="piece" schema="" catalog="tchad" type="TABLE">
+      <column name="idP" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="libP" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idP"/>
+    </table>
+    <table name="profession" schema="" catalog="tchad" type="TABLE">
+      <column name="id_profession" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="libelle" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_profession"/>
+    </table>
+    <table name="realisation" schema="" catalog="tchad" type="TABLE">
+      <column name="realisation_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="contenu" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="realisation_id"/>
+    </table>
+    <table name="renouvellement" schema="" catalog="tchad" type="TABLE">
+      <column name="idR" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="libR" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="idF" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idR"/>
+      <foreign-key name="renouvellement_ibfk_2" columns="idF" ref-table="formalite" ref-schema="" ref-catalog="tchad" ref-columns="idF" update-rule="0" delete-rule="0" deferrability="2"/>
+    </table>
+  </data-source>
+</component>

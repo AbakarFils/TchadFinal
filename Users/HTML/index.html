@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consul du TCHAD || Sénégal</title>
+
+    <!-------Liens CSS-------!-->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+	<link  href="CSS/font-awesome.min.css" rel="stylesheet">
+	<link href="CSS/animate.min.css" rel="stylesheet">
+	<link  type="text/css" href="CSS/magnific-popup.css" rel="stylesheet">
+	<link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/bootstrap-responsive.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!------------------------nav !-----------------------------------------!-->
+    <header id="header">
+        <nav class="navbar navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+	                <a class="navbar-brand topnav" href="index.html">
+	                    <img src="Images/logo.png" class="img-responsive">
+	                </a>
+            	</div>
+	            <div class="collapse navbar-collapse" id="menu">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="active">
+	                        <a href="#consul" >Accueil</a>
+	                    </li>
+	                    <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" id="formalites" data-toggle="dropdown">Formalités
+	                        	<span class="caret"></span>
+	                        </a>
+	                        <!--Formalites!-------------->
+	                        <ul class="dropdown-menu " role="menu" aria-labelledby="formalites">
+	                        	<li role="presentation"><a role="menuitem" href="#visa">Demande de visa</a></li>
+	                        	<li role="presentation"><a role="menuitem" href="#passeport" data-toggle="modal">Passeport</a></li>
+							    <li role="presentation"><a role="menuitem" href="#carte" data-toggle="modal">Carte Consulaire</a></li>
+							    <li role="presentation"><a role="menuitem" href="#laisser" data-toggle="modal">Laisser Passer</a></li>
+							    <li role="presentation"><a role="menuitem" href="#acte" data-toggle="modal">Acte de Naissance</a></li>
+							    <li role="presentation"><a role="menuitem" href="#certificat" data-toggle="modal">Certificat de Bonne Moralité</a></li>
+
+	                        </ul>
+	                        <!-------Fin Formalites----------------!-->
+	                    </li>
+	                    	 	<!-----------------Debut Passeport ----------!-->
+							    <div class="modal fade" id="passeport" role="dialog">
+							        <div class="modal-dialog">
+
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Demande de Passeport</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <ul class="list-group">
+							                    	<li class="list-group-item">Photocopie Acte de Légalisée</li>
+							                    	<li class="list-group-item">Somme 2000fr</li>
+							                    	<li class="list-group-item">2 Photos</li>
+							                    	<li class="list-group-item">Formulaire à remplir sur place</li>   
+							         
+							                    	<li class="list-group-item"><a data-toggle="collapse" href="#perte">Renouvellement ( Perte )</a></li>
+							                    	<!------------Perte passeport!-----------------!-->
+													<div id="perte" class="collapse">
+														<ul class="list-group">
+															<li class="list-group-item">Cerificat de perte du passeport (police) en cas de perte</li>
+															<li class="list-group-item">Copie du passeport en cours de validité</li>
+															<li class="list-group-item">2 Photos</li>
+															<li class="list-group-item">Formulaire rempli</li>
+															<li class="list-group-item">2000fr</li>
+														</ul>
+													</div>
+
+							                    	<!------------Fin Perte !-------------------------->           	        
+							                    </ul>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+
+							        </div>
+						   	 	</div>
+						   	 	<!-----------------fin de Passeport ----------!-->
+
+						   	 	<!------------------Debut Carte Consulaire---------------------!-->
+						   	 	<div class="modal fade" id="carte" role="dialog">
+							        <div class="modal-dialog">
+
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Demande de Carte Consulaire || Validité 2 ans</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <ul class="list-group">
+							                    	<li class="list-group-item">Pièce d'identité prouvant sa nationalité tchadienne</li>
+							                    	<li class="list-group-item">
+							                    		Simple -> 2000Fr<br>
+							                    		Numérique -> 5000Fr
+							                    	</li>
+							                    	<li class="list-group-item">2 Photos</li>   
+							                    	
+							                    	<li class="list-group-item"><a data-toggle="collapse" href="#renouvel">Renouvellement </a></li>
+							                    	<!------------Perte passeport!-----------------!-->
+													<div id="renouvel" class="collapse">
+														<ul class="list-group">
+															<li class="list-group-item">Ancienne Carte</li>
+															<li class="list-group-item">Photo d'identité</li>
+														</ul>
+													</div>
+
+							                    	<!------------Fin Perte !-------------------------->           	        
+							                    </ul>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+
+							        </div>
+						   	 	</div>
+
+
+
+						   	 	<!------------------Fin Carte Consulaire------------------------!-->
+
+
+						   	 	<!------------------Debut Laissez Passer---------------------!-->
+						   	 	<div class="modal fade" id="laisser" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Laisser Passer || Réservé seulement aux voyages à destination du Tchad</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <ul class="list-group">
+							                    	<li class="list-group-item">Copie du passeport expiré ou certificat de perte</li>
+							                    	<li class="list-group-item">2 Photos</li> 
+							                    	<li class="list-group-item">Préciser Compagnie Aérienne</li>
+							                    	          	        
+							                    </ul>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Laisser Passer------------------------!-->
+
+
+						   	 	<!------------------Debut Acte de Naissance---------------------!-->
+						   	 	<div class="modal fade" id="acte" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Acte de Naissance</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <ul class="list-group">
+							                    	<li class="list-group-item">Certificat d'accouchement</li>
+							                    	<li class="list-group-item">Copie pièce d'identités des parents</li>
+							                    	<li class="list-group-item"><a href="#copieActe" data-toggle="collapse">Copie d'acte de Naissance</a></li>        
+
+
+							                    	<div id="copieActe" class="collapse">
+							                    		<ul class="list-group">
+							                    			<li class="list-group-item">N° Acte de Naissance</li>
+							                    			<li class="list-group-item">Somme 5000fr</li>
+							                    			<li class="list-group-item disabled">N° d'enregistrement (Pour ceux qui sont nés au Sénégal)</li>
+							                    		</ul>
+							                    	</div>
+							                    </ul>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Acte de Naissance------------------------!-->
+
+						   	 	<!------------------Debut Certificat de Bonne Moralité---------------------!-->
+						   	 	<div class="modal fade" id="certificat" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Certificat de Bonne Moralité</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <ul class="list-group">
+							                    	<li class="list-group-item">Copie Carte Consulaire</li>
+							                    	<li class="list-group-item">Adresse nécessaire</li>
+							                    </ul>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Certificat de Bonne Moralité------------------------!-->
+
+	                    <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" id="tourisme" data-toggle="dropdown">Tourisme et Culture
+	                        	<span class="caret"></span>
+	                        	
+	                        </a>
+	                        	<!--Tourisme!-------------->
+	                        <ul class="dropdown-menu " role="menu" aria-labelledby="tourisme">
+	                        	<li role="presentation"><a role="menuitem" href="#presentation">Présentation</a></li>
+	                        	<li role="presentation"><a role="menuitem" href="#Tourismes">Tourisme</a></li>
+	                        	<li role="presentation"><a role="menuitem" href="#culture">Culture</a></li>
+	                        </ul>
+	                        	<!-------Fin Tourisme----------------!-->  
+	                    </li>
+	                   <!-- <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" id="investir" data-toggle="dropdown">Investir au Tchad
+	                        	<span class="caret"></span>
+	                        </a>
+	                        	<!--Investir!-------------->
+	                       <!-- <ul class="dropdown-menu " role="menu" aria-labelledby="investir">
+	                        	<li role="presentation"><a role="menuitem" href="#">La Charte des Investissements</a></li>
+	                        	<li role="presentation"><a role="menuitem" href="#">Indicateurs économiques</a></li>
+	                        </ul>
+	                        	<!-------Fin Investir----------------!-->  
+	                   <!-- </li>-->
+	                    <li>
+	                        <a href="#contact">Contact</a>
+	                    </li>
+	                </ul>
+	            </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->		
+    </header><!--/header-->	
+    <!-------------------------- Navigation || Fin -------------------------------!-->
+        <div id="consul">
+			<div class="container">
+				<div class="text-center">
+					<h3>Le Mot du Consul</h3>
+				</div>
+				<hr class="separate">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center infos-consul">
+							<img src="Images/consul.jpg" alt="" class="img-responsive align-middle">
+							
+							<h2>Mr. Salah Mahmoud Ousmane</h2>
+							<h4>Consul honoraire du Tchad au Sénégal</h4>
+							<p class="text-justify">Ingénieur Aéronautique à l'Asecna.Une personnalité exemplaire et déterminée à défendre l'intéret du Tchad et des tchadiens.</p>
+							
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-6 wow fadeInRight message" data-wow-offset="0" data-wow-delay="1s">
+						<div class="text-center">
+							<h2>Cher(e)s Compatriotes,</h2>
+							<h2>Chers Ami(e)s du Tchad,</h2>
+							<h4>Chers internautes</h4>
+						</div>
+						
+						<p class="text-justify">
+						Permettez-moi de souhaiter, à chacune et chacun d’entre vous, la bienvenue sur ce site du Consulat du Tchad au Sénégal.
+						Vous pouvez y trouver un certain nombre d’informations touristiques, économiques et culturelles pour organiser votre séjour au Sénégal.
+						En ma qualité de Consul Honoraire, je vous rappelle aussi mon rôle de représentation de notre pays auprès des autorités sénégalaises, des collectivités territoriales et locales.
+						Je suis donc chargé :
+						<ul>
+
+						<li><b>	d’assurer la protection de nos ressortissants, d’apporter assistance et conseils aux Tchadiens en difficultés ;</b></li>
+
+						<li><b>	de la délivrance des actes administratifs ( Visas, Légalisation de signature, Certificat de vie, Certificats de bonne moralité, certificat de nationalité, etc. ),</b></li>
+
+						<li><b>	de renseigner les touristes sur la concrétisation de leurs voyages,</b></li>
+
+						<li><b>	d’aider les entrepreneurs dans leurs projets d’investissements au Tchad.
+						Depuis sa création en 2009, les relations entre le Tchad et le Sénégal  ont connu un développement rapide. La coopération en matière de l’Enseignement Supérieur et de la Recherche s’est intensifiée entre les deux parties,  matérialisée par un Accord de Coopération signé le 07 mars 2014 à Dakar, les échanges  des chercheurs, enseignant et professeurs  se sont multipliés</b></li>
+						</ul></p>
+						<p class="text-justify">
+						Vous trouverez sur ce site des renseignements pratiques sur les formalités et procédures consulaires ainsi que des informations actualisées sur la protection consulaire. Nous voulons apporter notre contribution à travers ces informations à la sauvegarde de leurs droits légitimes conformément à la loi.
+
+						Le Consulat Honoraire du Tchad au Sénégal continuera à faire progresser les relations d'amitié entre le Tchad et le Sénégal.
+
+
+						Je vous souhaite une excellente visite sur notre site. N'hésitez pas à nous faire part de vos remarques et suggestions.</p>
+						<span class="pull-right">SALAH MAHMOUD OUSMANE</span>
+						
+					</div>
+					<br class="clearfix">
+					<div class="col-md-2 col-sm-3  horaire" >
+						<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
+							<button class="btn btn-lg">Horaire</button>
+							<h3>Lundi au Jeudi</h3>
+							<span>9h00 à 17h00</span>
+							<h3>Vendredi</h3>
+							<span>9h00 à 14h</span>
+							<h3>Samedi</h3>
+							<span>9h00 à 13h</span>
+						</div>
+						<hr class="separate">
+						<div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="1.6s">
+							<img src="Images/tofconsul.png" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/#consul-->
+
+<!----------------------------Demande de Visa--------------------------!-->
+		<div id="visa">
+			<div class="container">
+				<div class="row">
+							<!-----------------Debout séjour ----------!-->
+				    <div class="modal fade" id="sejour" role="dialog">
+				        <div class="modal-dialog">
+
+				            <!-- Modal content-->
+				            <div class="modal-content">
+				                <div class="modal-header">
+				                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				                    <h4 class="modal-title">VISA SEJOUR</h4>
+				                </div>
+				                <div class="modal-body">
+				                    <ul class="list-group">
+				                    	<li class="list-group-item">Passeport en cours de validité d'au moins 6 mois</li>
+				                    	<li class="list-group-item">1 formulaire de demande de visa</li>
+				                    	<li class="list-group-item">1 photo d’identité</li>
+				                    	<li class="list-group-item">Justificatif d’hébergement au Tchad avec adresse exacte (invitation et réservation d’hôtel)</li>
+				                    	<li class="list-group-item">Ordre de Mission /de Service (Fonctionnaires)</li>
+				                    	<li class="list-group-item">Lettre de Recommandation de l’Entreprise (Hommes d’affaires) </li>
+				                    	<li class="list-group-item">Vaccination contre la Fièvre jaune</li>
+
+				                    </ul>
+				                </div>
+				                <div class="modal-footer">
+				                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				                </div>
+				            </div>
+
+				        </div>
+			   	 	</div>
+			   	 	<!-----------------fin de séjour ----------!-->
+
+
+					<!-----------------Debut Transit ----------!-->
+				    <div class="modal fade" id="transit" role="dialog">
+				        <div class="modal-dialog">
+
+				            <!-- Modal content-->
+				            <div class="modal-content">
+				                <div class="modal-header">
+				                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				                    <h4 class="modal-title">VISA TRANSIT</h4>
+				                </div>
+				                <div class="modal-body">
+				                    <ul class="list-group">
+				                    	<li class="list-group-item">le Passeport en cours de validité</li>
+				                    	<li class="list-group-item">1 formulaire de demande de visa</li>
+				                    	<li class="list-group-item">1 photo d’identité</li>
+				                    	<li class="list-group-item">Le visa préalable du pays traversé avant d’arriver au Tchad</li>
+				                    	<li class="list-group-item">La vaccination contre la Fièvre Jaune</li>
+				                    	<li class="list-group-item">Le tarif est le même que pour un visa de séjour. </li>	        
+				                    </ul>
+				                </div>
+				                <div class="modal-footer">
+				                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				                </div>
+				            </div>
+
+				        </div>
+			   	 	</div>
+			   	 	<!-----------------fin de Transit ----------!-->
+
+			   	 	<!-----------------Debut Véhicule ----------!-->
+				    <div class="modal fade" id="vehicule" role="dialog">
+				        <div class="modal-dialog">
+
+				            <!-- Modal content-->
+				            <div class="modal-content">
+				                <div class="modal-header">
+				                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				                    <h4 class="modal-title">VISA VEHICULE</h4>
+				                </div>
+				                <div class="modal-body">
+				                    <ul class="list-group">
+				                    	<li class="list-group-item">La photocopie du Certificat International d’Assurance du véhicule et des personnes à bord en cours de validité</li>
+				                    	<li class="list-group-item">La photocopie du plan de route</li>
+				                    	<li class="list-group-item">Le carnet de passage en douane</li>
+				                    	<li class="list-group-item">Le point d’entrée au Tchad</li>                	        
+				                    </ul>
+				                </div>
+				                <div class="modal-footer">
+				                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				                </div>
+				            </div>
+
+				        </div>
+			   	 	</div>
+			   	 	<!-----------------fin de vehicule ----------!-->
+
+			   	 		 	<!-----------------Debut Affaires ----------!-->
+				    <div class="modal fade" id="affaires" role="dialog">
+				        <div class="modal-dialog">
+
+				            <!-- Modal content-->
+				            <div class="modal-content">
+				                <div class="modal-header">
+				                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				                    <h4 class="modal-title">VISA Affaire</h4>
+				                </div>
+				                <div class="modal-body">
+				                    <ul class="list-group">
+				                    	<li class="list-group-item">1 Passeport valable au moins 6 mois</li>
+				                    	<li class="list-group-item">2 photos d'identité</li>
+				                    	<li class="list-group-item">1 formulaire de demande de visa</li>
+				                    	<li class="list-group-item">Attestation de voyage ou copie des billets d'avion</li>  
+				                    	<li class="list-group-item">Invitation d'un correspondant</li>        
+				                    	<li class="list-group-item">Lettre de la société attestant le motif, l'hébergement et la prise en charge de tout frais supplémentaire du séjour</li>      	   
+				                    	<li class="list-group-item">Un certificat d'hébergement ou réservation hotelière</li>
+				                    	<li class="list-group-item">Copie du carnet de vaccination (Fièvre Jaune)</li>     
+				                    </ul>
+				                </div>
+				                <div class="modal-footer">
+				                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				                </div>
+				            </div>
+
+				        </div>
+			   	 	</div>
+			   	 	<!-----------------fin de Affaires ----------!-->
+
+			   	 	<div class="text-center">
+						<h3>Demande de VISA</h3>
+						<p><a href="1.pdf" ><h4 class="form-download">Télécharger le Formulaire</h4></a><br> </p>
+					</div>
+					<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="text-center">
+							<a href="#sejour" data-toggle="modal">
+								<div class="box">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<h2>Visa Séjour</h2>
+									<p>Vous voulez découvrir notre beau pays, vous voulez un visa pour le Tchad<br><br></p>
+								</div>	
+							</a>				
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.6s">
+						<div class="text-center">
+							<a href="#transit" data-toggle="modal">
+								<div class="box">
+									<i class="fa fa-exchange" aria-hidden="true"></i>
+									<h2>Visa Transit</h2>
+									<p>Vous etes transitaires, vous voulez un visa pour exercer votre activité entre les deux pays</p>
+								</div>	
+							</a> 				
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
+						<div class="text-center">
+							<a href="#vehicule" data-toggle="modal">
+								<div class="box">
+									<i class="fa fa-automobile" aria-hidden="true"></i>
+									<h2>Visa Véhicule</h2>
+									<p>Homme d'affaires voulant faire des affaires au Tchad<br><br></p>
+								</div>	
+							</a>				
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+						<div class="text-center">
+							<a href="#affaires" data-toggle="modal">
+								<div class="box">
+									<i class="fa fa-bar-chart" aria-hidden="true"></i>
+									<h2>Visa Affaires</h2>
+									<p>Homme d'affaires voulant faire des affaires au Tchad<br><br></p>
+								</div>		
+							</a>			
+						</div>
+					</div>
+				</div><!---row-----!-->
+			</div><!--container!-->
+		</div><!--#visa---!-->
+		<div id="tourismeetCulture">
+			<div id="presentation">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 wow fadeInRight text-center" data-wow-offset="0" data-wow-delay="0.6s">
+							<div class="row">
+								<!--------Relief-------------!-->
+								<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+									
+									<div class="panel panel-primary">
+										<div class="panel-heading" id="relief">Relief</div>
+										<div class="panel-body">
+												<p class="text-justify" >
+								Le relief du Tchad est comparable à une cuvette bordée par deux couronnes de montagnes et de plateau : au Nord avec le massif de Tibesti ( 3415 m au volcan de l’Emi Koussi) et à l’Est par le plateau gréseux de l’Ouaddaï (1360m) s’abaissant vers le Sud-Ouest. La zone la plus basse est occupée par le Lac Tchad, réceptacle final de vastes plaines d’inondation des fleuves Chari et Logone. 
+
+								Ces deux fleuves constituent l’unique réseau fluvial : le Cari coule sur 1200km depuis la Centrafrique et son principal affluent le Logone naît au Cameroun sur 1000km. Tous deux confluent à l’approche de la capitale. Ils sont en partie navigables quatre mois par an. Il y a cinq lacs principaux : Tchad, Fitri, Iro, Lere, Tekem. Les eaux y sont très poissonneuses mais rendues dangereuses par la bilharziose et le ver de Guinée.
+
+								</p>
+										</div>
+									</div>
+								</div>
+						
+							<!------------------Histoire--------------------!-->
+							<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.6s">
+									<div class="panel panel-danger">
+										<div class="panel-heading" id="histoire">Histoire</div>
+										<div class="panel-body">
+											<p class="text-justify" >
+								L’histoire du Tchad remonte au Xe siècle, lorsque les Sao s’établissent au sud du Lac Tchad. Ces Sao, aujourd’hui disparus, sont ls ancêtres de plusieurs populations de la région tchadienne parmi lesquelles les Kotokos, peuple important de chasseurs et de pêcheurs. De nombreuses pièces de terre cuite et de bronze fabriquées par les Sao et représentant des êtres humains et des animaux ont été retrouvées au sud du Lac Tchad.
+								Dans la seconde moitié du XIXe siècle, l’Europe découvre l’existence du Tchad par les récits des voyageurs Cheik El Toussi, Barth (1857) et Nachtigal (1879).
+								Plusieurs Etats puissants se constituèrent, s’affrontèrent, se dominèrent tout à tour ; le royaume du Kanem-Bornou, le sultanat de Barguirmi, le puissant empire Ouaddaï étendirent successivement leur domination sur la majeure partie actuelle du pays entre le Ixe et la fin du XVIIIe siècle.
+								La fondation de N’djaména (ex Fort-Lamy), future capitale du Tchad, et le rétablissement de la paix dans le royaume de Baguirmi et dans le royaume voisin du Ouaddaï mirent un terme aux luttes. Il faut attendre 1913 pour que le Tchad soit entièrement constitué.
+								En 1940, Félix Eboué, gouverneur du Tchad, décide le ralliement du pays à la France libre. C’est du Tchad que pourra partir le Général Leclerc, et les soldats tchadiens seront à Paris pour la Libération.
+								Proclamé République le 28 novembre 1958, le Tchad accède à la souveraineté internationale le 11 août 1960. Depuis cette date, le pays connaît une évolution institutionnelle et politique.
+								Des années de dictature et de parti unique ont empêché l’éclosion de toute culture démocratique et  de pluralisme politique.
+								Les différents régimes qui se sont succédé ont créé et entretenu le régionalisme, le tribalisme, le népotisme, les inégalités sociales, les violations des droits de l’Homme et des libertés fondamentales individuelles et collectives dont les conséquences ont été la guerre, la violence politique, la haine, l’intolérance et la méfiance entre les différentes communautés qui composent la nation tchadienne. Cette crise institutionnelle et politique qui secoue le Tchad depuis plus de trois décennies n’a pas pour autant entamé la détermination du peuple tchadien à parvenir à l’édification d’une nation, à la dignité, à la liberté et à la prospérité.
+								Le Tchad vit actuellement dans une démocratie pluraliste démocratie avec un président de la République et un parlement élus par le peuple.
+							</p>
+										</div>
+									</div>
+								</div>
+							
+							<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
+								<div class="panel panel-warning">
+										<div class="panel-heading" id="geo">Géographie</div>
+										<div class="panel-body">
+											<p class="text-justify" >
+								Trait d’union entre le Maghreb et l’Afrique noire, carrefour des caravanes transsahariennes et berceau des civilisations nomades, ce pays cristallise en lui les contrastes entre le désert du Nord et la savane du Sud, les ascétiques traditions musulmanes et les rites animistes ou chrétiens élaborés, les populations nomades vivant au rythme de leur chameau et au gré de pâturages, et les agriculteurs sédentaires s’employant à domestiquer la terre et à lui donner un visage humain.
+
+								Le Tchad est un pays d’Afrique centrale qui s’étend sur un territoire d’une superficie de 1.284.000 km2, 560 km2 sont à vocation agricole. Vingtième pays au monde par sa superficie, le Tchad est le cinquième pays le plus grand pays d’Afrique après le Soudan, l’Algérie, la République Démocratique du Congo et la Libye. 
+
+								Ce pays se caractérise par son immensité (2 fois plus grands que la France) mais aussi par son enclavement et son éloignement de la mer. Il est situé à 1700 km de Douala (Cameroun) et 2 400 km de Port Soudan sur la mer rouge. 
+
+								Ses frontières sont communes avec le Soudan à l’Est, la République Centrafricaine et le Cameroun du Sud, le Nigeria à l’Ouest, le Niger au Nord –Ouest et la Libye au Nord.
+
+							</p>
+										</div>
+									</div>
+								</div>
+							
+							
+							<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="1.2s">
+									<div class="panel panel-success">
+										<div class="panel-heading" id="climat">Climat</div>
+										<div class="panel-body">
+											<p class="text-justify" >
+								Le climat est un climat tropical humide au sud (zone soudanienne la plus arrosée et la plus peuplée), offrant un paysage de savane arborée et de forêt plus clairsemée à l’approche des villages en raison de la coupe abusive du bois. Le climat de la zone centrale est de type sahélien caractérisé par une steppe épineuse, fortement marqué par une saison sèche plus longue que la saison des pluies. Le Nord, soumis à un climat saharien désertique aux paysages contrastés, représente la moitié de la superficie du pays.
+								L’harmattan, un vent continental sec et chaud, est porteur de vents en provenance de l’Est et du Nord-Ouest du Sahara. La mousson, équatoriale, humide et fraîche avec des vents du Sud-Ouest, rythme saison sèche et saison des pluies.
+								Le territoire compte 600 000 hectares de forêts classées et 400 000 hectares de parcs nationaux. Les deux parcs les plus importants offrant le plus de variétés d’espèces sont le célèbre parc national de Zakouma dans le Salamat et celui de Manda dans la préfecture de Sarh.
+							</p>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						<!--<div class="col-md-5 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
+							<ul class="list-group">
+								<li class="list-group-item active">Présentation</li>
+								<li class="list-group-item">Capitale<span class="badge">N'Djaména</span></li>
+								<li class="list-group-item">Population <span class="badge">11 274 106 habitants</span></li>
+								<li class="list-group-item">Densité<span class="badge">8,7 hab/km²</span></li>
+								<li class="list-group-item">Superficie<span class="badge">1 284 000 km²</span></li>
+								<li class="list-group-item">Islam<span class="badge"> 60% </span></li>
+								<li class="list-group-item">Christiannisme<span class="badge"> 30% </span></li>
+								<li class="list-group-item">Autres Religions<span class="badge"> 10% </span></li>
+								<li class="list-group-item">Langues Officielles<span class="badge">Arabe et Français</span></li>
+								<li class="list-group-item">Monnaie<span class="badge">Franc CFA</span></li>
+								<li class="list-group-item">PIB (en milliard de FCFA)<span class="badge">3 232</span></li>
+								<li class="list-group-item">PIB/hab<span class="badge">775 $ US</span></li>
+								<li class="list-group-item">Villes<span class="badge">Sarh, Moundou, Abéché</span></li
+							</ul>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!--------------------------Tourisme-----------------------!-->
+			<div id="Tourismes">
+				<div class="row">
+				
+						<!------------------Debut Ounianga---------------------!-->
+						   	 	<div class="modal fade" id="ounianga" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Lac Ounianga</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Les lacs d'Ounianga sont un ensemble d'une cinquantaine de lacs aux eaux fortement salines, occupant un bassin entre les massifs du Tibesti à l'ouest et de l'Ennedi à l'est. Il s'agit plus précisément de deux ensembles de lacs.  Ils occupent une superficie totale de 20 km2, mesurent 27 m de profondeur et forment le plus vaste ensemble lacustre du Sahara
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Ounianga------------------------!-->
+						   	 	<!------------------Debut Zakouma---------------------!-->
+						   	 	<div class="modal fade" id="zakouma" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Parc Zakouma</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Le parc national de Zakouma est situé sur la rive droite du Bahr Salamat à quelques dizaines de kilomètres à l'ouest de la ville d'Am Timan, dans le sud-est tchadien. Créé en 1963, Zakouma fut le premier parc national au Tchad. Il est entièrement entouré par la Réserve de faune du Bahr Salamat. Zakouma a été négligé pendant la longue période de guerre civile au Tchad, mais un programme de restauration, soutenu par l'Union européenne, a débuté en 1989 et continue actuellement (2014).
+													Les éléphants qui vivent à l'intérieur du parc bénéficient de la protection du gouvernement tchadien, mais ceux qui migrent hors du parc pour fourrager ne bénéficient pas de la même protection assurée par des patrouilles à l'intérieur du parc. Au Tchad, toute chasse à l'éléphant est interdite, et le commerce de l'ivoire a été banni depuis 1989 ; cependant le marché noir est en augmentation, alimenté par un pillage mené par des braconniers qui n'hésitent pas à massacrer les gardes du parc par patrouilles entières mais aussi tout représentant de l'ordre.
+
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Zakouma------------------------!-->
+						   	 		<!------------------Debut Guelta D'archei---------------------!-->
+						   	 	<div class="modal fade" id="guelta" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Guelta D'Archei</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Archei d’une superﬁcie de 18 000 km2, se caractérise par ses Gueltas qui sont des points d’eau permanents. Dans ces eaux, on peut observer la présence d’une faune aquatique, notamment des poissons et les seuls crocodiles du Nil vivant au milieu du désert. Il s’agit d’un phénomène particulièrement étonnant et unique au Sahara alors que dans la réalité, on imagine le désert sans vie.
+
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Guelta D'archei------------------------!-->
+						   	 	<!------------------Debut Désert---------------------!-->
+						   	 	<div class="modal fade" id="desert" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Le Désert du Tchad</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Les inconditionnels du Sahara ne nous démentiront pas, les plus beaux paysages du Sahara sont incontestablement au Tchad, au nord du Pays. Les massifs de L'Ennedi, du Tibesti et du Borkou vous ouvrent leurs portes pour des treks fabuleux et inédits dans le désert du Tchad, avec entre autres la fameuse Guelta d'Archeï.
+
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Désert------------------------!-->
+						   	 	<!------------------Debut Crocodile---------------------!-->
+						   	 	<div class="modal fade" id="crocodile" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Le Crocodile du Tchad</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Le crocodile d'Afrique de l'Ouest (Crocodylus suchus) est une espèce de crocodile appartenant à la famille des crocodiliens dans la famille des Crocodylidae. Ce reptile était autrefois considéré comme une sous-espèce de crocodile du Nil. Aujourd'hui, des tests ADN ont démontré que le crocodile d'Afrique de l'Ouest est une espèce distincte. Le crocodile d'Afrique de l'Ouest est également connu sous le nom de Crocodile du désert.
+
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Crocodile------------------------!-->
+						   	 	<!------------------Debut Crocodile---------------------!-->
+						   	 	<div class="modal fade" id="gibier" role="dialog">
+							        <div class="modal-dialog">
+							            <!-- Modal content-->
+							            <div class="modal-content">
+							                <div class="modal-header">
+							                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+							                    <h4 class="modal-title">Le Gibier d'eau du Tchad</h4>
+							                </div>
+							                <div class="modal-body">
+							                    <p class="text-justify">
+													Le Tchad est un pays traditionnel de chasse en Afrique. Son histoire mouvementée en a rendu la sécurité et l’accès variables au fil des années, mais sa réputation reste entière. De nombreuses chasses y sont possibles. C’est néanmoins le lac Tchad et son gibier d’eau qui en sont l’attrait principal. Il est en effet un refuge pour de nombreux anatidés du Paléarctique occidental. On raconte que la zone accueille jusqu’à 60 % des oiseaux migrateurs de l’Afrique de l’Ouest : ce serait l’un des trois principaux sites de concentration des oiseaux d’eau, avec le delta du fleuve Sénégal et le delta intérieur du Niger. On peut y observer notamment la sarcelle d’été, la sarcelle d’hiver, le canard pilet, le siffleur, le dendrocygne veuf, le dendrocygne fauve, l’oie de Gambie, le canard casqué, l’oie naine, la bécassine des marais, le chevalier guignette… Sans oublier le francolin, la pintade, le ganga, le pigeon, la tourterelle, le lièvre, le sitatunga et même les éléphants, estimés à plusieurs milliers dans cette région (mais que laisseront derrière eux les braconniers soudanais… ?)
+
+												</p>
+							                </div>
+							                <div class="modal-footer">
+							                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+							                </div>
+							            </div>
+							        </div>
+						   	 	</div>
+						   	 	<!------------------Fin Crocodile------------------------!-->
+
+						<section id="photos">
+							<div class="container">
+								<div class="row parent-container">
+									<div class="col-md-4 col-sm-6 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/1.jpg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#ounianga" ><h2>Lac Ounianga</h2></a>
+									</div>
+									<div class="col-md-4 col-sm-6  wow fadeInLeftt" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/zakouma.jpeg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#zakouma" ><h2>Parc Zakouma</h2></a>
+									</div>
+									<div class="col-md-4 col-sm-6  wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/archei.jpg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#guelta" ><h2>Guelta d'archeï</h2></a>
+									</div>
+									<div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/desert.jpg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#desert" ><h2>Désert</h2></a>
+									</div>
+									<div class="col-md-4 col-sm-6 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/crocodile.jpg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#crocodile" ><h2>Crocodile</h2></a>
+									</div>
+									<div class="col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s">
+										<img src="Images/picatharte.jpg" alt="" class="img-responsive" style="display: inline;">
+										<a data-toggle="modal" href="#gibier"><h2>Gibier d'eau</h2></a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+				</div>
+			</div>
+			<!-----------------------Culture-------------------------!-->
+			<div id="culture">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 wow fadeInLeft tradition" data-wow-duration="3s" data-wow-delay="1s">
+							<h2 class="text-center">Tradition</h2>
+							<p class="text-justify">
+							La tradition du mariage au Tchad est extrêmement importante, comme dans n'importe quel pays d'Afrique. Cet événement, célébré en grande pompe, est une fête qui se doit d'être la plus impressionnante et la plus marquante possible. C'est d'abord la famille de l'homme qui arrive dans le village de la femme et chaque famille a son représentant, seul habilité à prendre la parole. Les talents d'élocution sont indispensables. En se rendant dans le village de sa future épouse, l'objectif, pour le représentant de l'homme, est de prouver que la famille du futur époux est une bonne famille, et que l'homme sera en mesure de prendre soin de sa future épouse. Et cela passe par la do, la somme d'argent (ou des biens matériels tels que des animaux, des vêtements, des bouteilles d'alcool...) que la famille de l'homme donnera à la famille de la femme, en compensation du départ de la future mariée. Enfin, la pratique de l'enlèvement de la mariée est également de coutume au Tchad. Comme son nom l'indique, l'homme " enlève " sa femme à sa famille car désormais, c'est lui qui prendra soin d'elle. De manière plus globale, dans les pays africains, les familles des futurs époux sont particulièrement impliquées dans le mariage de leurs enfants.</p>
+						</div>
+						<div class="col-md-6 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+							<img src="Images/mariage.jpg" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s">
+							<img src="Images/tradition1.jpg" class="img-responsive">
+						</div>
+						<div class="col-md-6 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+							<img src="Images/tradition2.jpg" class="img-responsive">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Forms-->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 form wow fadeInLeft" data-wow-duration="3s" data-wow-delay="1s">
+						<h3>Nous Contacter..</h3>
+						<p>Pour toutes vos suggestions, critiques, questions ou pour plus d'informations merci de nous contacter </p>
+					
+	                    <form>
+	                    	<div class="form-group">
+	                    		<input type="text" name="name"  placeholder="Votre Nom" class="form-control  input-lg" id="name">
+	                    	</div>
+	                    	<div class="form-group">
+	                    		<input type="mail" name="mail"  placeholder="Votre Mail" class="form-control input-lg" id="Mail">
+	                    	</div>
+	                    	<div class="form-group">
+	                    		<textarea name="text" placeholder="Votre message" class="form-control input-lg" id="email" rows="6"></textarea>
+	                    	</div>
+	                    	<button type="submit" class="btn btn-block">Envoyer</button>
+	                    </form>
+
+					</div> 
+					<div class="col-sm-6 text-center frame wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
+						<h1>LOCALISATION</h1>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.121555586744!2d-17.46216938555372!3d14.705717189735578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec17294e19c0b3b%3A0x4deb19d759e8d26a!2sConsulat+du+Tchad!5e0!3m2!1sen!2ssn!4v1510864945434" width="100%" height="550px" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="clearfix"></div>
+	    <div id="footer" class="container-fluid">
+	      <div class="row">
+	        <div class="col-sm-6 col-md-3">
+	          <h4>&copy; Copyright - 2017 by Tchad-Up</h4>
+	        </div>
+	        <div class="col-sm-6 col-md-3">
+	        	<i class="fa fa-phone" aria-hidden="true" style="display: inline; margin-right: 5px;"></i>
+	          <h4 style="display: inline; font-family: Times;">33 824 50 17</h4>
+	        </div>
+	        <div class="col-sm-6 col-md-3">
+	          <h4>Consulat Tchad à Dakar</h4>
+	        </div>
+	        <div class="col-sm-6 col-md-3">
+	          <h4>Sénégal 2017</h4>
+	        </div>
+	      </div>
+	    </div>
+
+
+
+     
+    <script src="JS/jquery-2.1.1.min.js"></script>		
+
+    <script src="JS/bootstrap.min.js"></script>	
+	
+	<script src="JS/wow.min.js"></script>
+	<script src="JS/jquery.magnific-popup.js"></script>
+	<script src="JS/scrollPress.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+              <!--<script type="text/javascript">
+              	$(window).scrollPress();
+              </script>-->
+</body>
+</html>

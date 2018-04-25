@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create download pdf</title>
+</head>
+<body>
+	<a href="1.pdf" >Download </a>
+</body>
+</html>
